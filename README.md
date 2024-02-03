@@ -1,6 +1,16 @@
-# Deep-Learning-
-This repo comprise of various NNs, that were built to detect images and recommend entities of interest. 
+# DEEP LEARNING
 
-If you like the content here please give a star and support, so that I can do more.
+****** Malaria detection using CNN ******
+
+Used Tensorflow, Keras, sci-kit learn, stats models, numpy, pandas, matlplotlib, plotly
+
+Compared with VGG16 model; https://keras.io/api/applications/vgg/
+
+****** Digits detection *****
+
+Tensorflow, keras, numpy, sklearn, pandas etc
+ 
+
+
 
 Thank you! :)
