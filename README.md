@@ -13,7 +13,7 @@ To benchmark my innovative approach, I've conducted a comprehensive performance 
 VGG16 model; https://keras.io/api/applications/vgg/ 
 Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/applications/vgg/
 
-****** Digits detection *****
+****** Recommedation systems based on Amazon user's purchase history*****
 
 Tensorflow, keras, numpy, sklearn, pandas etc
  
