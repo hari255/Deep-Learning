@@ -2,7 +2,7 @@
 
 # DEEP LEARNING
 
-1. Malaria detection using CNN
+# 1. Malaria detection using CNN
 
 Used Tensorflow, Keras, sci-kit learn, stats models, numpy, pandas, matlplotlib, plotly
 
