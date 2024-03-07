@@ -12,7 +12,7 @@ Data folder contains metadata, datasets imported in Notebooks fromt the repositr
 
 Used Tensorflow, Keras, sci-kit learn, stats models, numpy, pandas, matlplotlib, plotly
 
- 
+https://github.com/hari255/DeepLearning/blob/main/_Malaria_Detection.ipynb
 To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
 
 VGG16 model; https://keras.io/api/applications/vgg/ 
