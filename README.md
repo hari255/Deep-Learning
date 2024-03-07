@@ -32,7 +32,27 @@ We're on a mission to build our own magic recommender! We're using a special set
 
 So, get ready for a magical journey where we make online shopping super fun and easy! 🌟✨ Get ready to discover some awesome stuff made just for you! 🚀🛍️
  
+# 3. H2O AutoML
 
+AutoML Using H2O
+
+What is Auto ML?
+
+Automated machine learning (AutoML) is the process of automating the tasks of applying machine learning to real-world problems.
+
+AutoML, short for Automated Machine Learning, refers to the process of automating various aspects of machine learning model development and deployment.
+
+AutoML typically automates the following aspects of the machine learning workflow:
+
+Data Preprocessing Feature Selection hyperparameter Tuning Evaluation Deployment
+
+... Uh, that's a lot.!
+
+Also, it can interpret results. :)
+
+h2o-logo
+
+H2O offers many solutions to the day-to-day problems that data scientists and machine learning engineers face. It saves a lot of time during pre-processing, tuning, and evaluation. https://h2o.ai/company/
 
 
 Thank you! :)
