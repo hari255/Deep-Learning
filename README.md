@@ -2,7 +2,7 @@
 
 # DEEP LEARNING
 
-# 1. Malaria detection using CNN
+# 1. Malaria detection using Convolutional Neural Networks (Computer Vision)
 
 Used Tensorflow, Keras, sci-kit learn, stats models, numpy, pandas, matlplotlib, plotly
 
@@ -15,7 +15,7 @@ To benchmark my innovative approach, I've conducted a comprehensive performance 
 VGG16 model; https://keras.io/api/applications/vgg/ 
 Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/applications/vgg/
 
-****** Recommedation systems based on Amazon user's purchase history*****
+# 2. Recommedation systems based on Amazon user's purchase history
 
 Tensorflow, keras, numpy, sklearn, pandas etc
  
