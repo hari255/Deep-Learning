@@ -44,13 +44,14 @@ AutoML, short for Automated Machine Learning, refers to the process of automatin
 
 AutoML typically automates the following aspects of the machine learning workflow:
 
-Data Preprocessing Feature Selection hyperparameter Tuning Evaluation Deployment
+1. Data Preprocessing
+2. Feature Selection
+3. hyperparameter Tuning
+4. Evaluation
+5. Deployment
+... Uh, that's a lot.! Also, it can interpret results. :)
 
-... Uh, that's a lot.!
-
-Also, it can interpret results. :)
-
-h2o-logo
+**In this project, we just go through the basic steps like setting up H20 in a notebook and running through a ML problem by leveraging H2O AutoML doing the work for us.**
 
 H2O offers many solutions to the day-to-day problems that data scientists and machine learning engineers face. It saves a lot of time during pre-processing, tuning, and evaluation. https://h2o.ai/company/
 
