@@ -8,7 +8,7 @@ Data folder contains metadata, datasets imported in Notebooks fromt the repositr
 
 
 
-# 1. Malaria detection using Convolutional Neural Networks (Computer Vision)
+# 1.  Computer Vision - Malaria detection using Convolutional Neural Networks
 
 Used Tensorflow, Keras, sci-kit learn, stats models, numpy, pandas, matlplotlib, plotly
 
@@ -20,9 +20,8 @@ Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/
 
 # 2. Recommedation systems based on Amazon user's purchase history
 
-# Amazon Magic Recommender!
 
-Hey there! 🚀 Welcome to our Amazon Magic Recommender project! Imagine having a buddy who knows exactly what you'd like to buy online - that's what we're creating here!
+Hey there! 🚀 Welcome to the Amazon product Recommender project! Imagine having a buddy who knows exactly what you'd like to buy online - that's what we're creating here!
 
 **The Story:**
 You know how sometimes there's just too much stuff online, and it's hard to decide what to pick? Well, our Amazon Magic Recommender is like a superhero that helps you find cool stuff you'll love! It's like having a friend who knows your favorite things.
@@ -35,11 +34,9 @@ We're on a mission to build our own magic recommender! We're using a special set
 
 So, get ready for a magical journey where we make online shopping super fun and easy! 🌟✨ Get ready to discover some awesome stuff made just for you! 🚀🛍️
  
-# 3. H2O AutoML
+# 3. Leveraging Auto ML using H2O
 
-AutoML Using H2O
-
-What is Auto ML?
+**What is Auto ML?**
 
 Automated machine learning (AutoML) is the process of automating the tasks of applying machine learning to real-world problems.
 
@@ -56,7 +53,8 @@ AutoML typically automates the following aspects of the machine learning workflo
 
 **In this project, we just go through the basic steps like setting up H20 in a notebook and running through a ML problem by leveraging H2O AutoML doing the work for us.**
 
-H2O offers many solutions to the day-to-day problems that data scientists and machine learning engineers face. It saves a lot of time during pre-processing, tuning, and evaluation. https://h2o.ai/company/
+H2O offers many solutions to the day-to-day problems that data scientists and machine learning engineers face. It saves a lot of time during pre-processing, tuning, and evaluation. 
+https://h2o.ai/company/
 
 
 Thank you! :)
