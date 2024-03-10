@@ -10,12 +10,12 @@ Data folder contains metadata, datasets imported in Notebooks fromt the repositr
 
 # 1.  Computer Vision - Malaria detection using Convolutional Neural Networks
 
-Used Tensorflow, Keras, sci-kit learn, stats models, numpy, pandas, matlplotlib, plotly
-
+This is a robust malaria detection system using Convolutional Neural Networks (CNN). Leveraging Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model to accurately identify parasites in blood smear images. This model includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training with advanced layers like Conv2D, MaxPooling2D, and Dense. Explore the intricacies of my approach, from data augmentation to early stopping, as we aim for precise diagnosis through cutting-edge image classification.
 https://github.com/hari255/DeepLearning/blob/main/_Malaria_Detection.ipynb
-To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
 
+To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
 VGG16 model; https://keras.io/api/applications/vgg/ 
+
 Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/applications/vgg/
 
 # 2. Recommedation systems based on Amazon user's purchase history
