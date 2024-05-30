@@ -19,9 +19,9 @@ https://github.com/hari255/DeepLearning/blob/main/_Malaria_Detection.ipynb
 
 <img width="460" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/247ea202-56a1-45a4-a959-bec0e40e9bee">
 
-Infected cells have some form of disturbances within the cell with a dark color formation.
++ Infected cells have some form of disturbances within the cell with a dark color formation.
 
-UnInfected cells are with the uniform color throughout the image.
++ UnInfected cells have uniform color throughout the image.
 
 To accurately identify parasites in cell images and train our model to distinguish them, we must focus on the key aspects that differentiate these categories. This involves analyzing and understanding the unique characteristics and features that set each parasite apart. By doing so, we can ensure that our model is well-equipped to recognize and classify the various types of parasites accurately.
 
@@ -37,11 +37,19 @@ To accurately identify parasites in cell images and train our model to distingui
 
 ## Data Transformation
 
+In the data transformation stage, I've tried to use multiple techniques used in Image procesing and Computer Vision and expereimenting with my dataset. These techinques are useful in different stages of Model building.
+
+| Technique | Description |
+| ------ | ----------- |
+| RGB to HSV  | To seperate image brightness from color information |
+| Gaussian smoothing | To remove noise from the image |
+| Data Augmentation   | To slightly alter the image and generate new one |
+
+
 **Converting RGB to HSV using OpenCV**
 
 The purpose of converting RGB images to HSV (Hue, Saturation, Value) using OpenCV is to facilitate more effective image processing and analysis. The HSV color space separates image intensity (brightness) from color information, which can be particularly useful for various image processing tasks. 
 
-**Leveraging Color based Segmentation** 
 In the HSV color space, it's wasy to seperate colors based on their hue. This is useful for segmenting objects in an image based on color. This property helps us identify and differentiate te infected cell images.
 
 `Python code to convert the images to HSV using Open CV`
@@ -78,13 +86,57 @@ In the HSV color space, it's wasy to seperate colors based on their hue. This is
 ``` 
 
 
+**Utilizing Gaussian Blurring**
+
+Gaussina Blurring or Smoothing is a technique that helps in removing noise from an image. It uses Gaussian kernel to weigh the neighboring pixels based on a Gaussian distribution.
+
+<img width="252" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/1165c5af-51d5-4173-950e-cc82a864bbb5">
+
++ (x,y) are the coordinates of the pixel.
++ σ is the standard deviation of the Gaussian distribution, which controls the amount of blurring.
+
+*After Gaussian smoothing, the images looks like below.
 
 
+``` py
 
+model3 = Sequential()
 
+# Build the model here
+model3.add(Conv2D(filters = 32, kernel_size = 2, padding = "same", activation = "relu", input_shape = (64, 64, 3)))
 
+model3.add(MaxPooling2D(pool_size = 2))
 
+model3.add(Dropout(0.2))
 
+model3.add(Conv2D(filters = 32, kernel_size = 2, padding = "same", activation = "relu"))
+
+model3.add(MaxPooling2D(pool_size = 2))
+
+model3.add(Dropout(0.2))
+
+model3.add(Conv2D(filters = 32, kernel_size = 2, padding = "same", activation = "relu"))
+
+model3.add(MaxPooling2D(pool_size = 2))
+
+model3.add(Dropout(0.2))
+
+model3.add(Flatten())
+
+model3.add(Dense(512, activation = "relu"))
+
+model3.add(Dropout(0.4))
+
+model3.add(Dense(2, activation = "softmax")) # 2 represents output layer neurons
+
+# Use this as the optimizer
+adam = optimizers.Adam(learning_rate = 0.001)
+
+model3.compile(loss = 'binary_crossentropy' , optimizer = adam, metrics = ['accuracy'])
+
+model3.summary()
+
+```
 
 
 
