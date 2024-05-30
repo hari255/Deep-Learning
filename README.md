@@ -61,38 +61,8 @@ The purpose of converting RGB images to HSV (Hue, Saturation, Value) using OpenC
 
 In the HSV color space, it's wasy to seperate colors based on their hue. This is useful for segmenting objects in an image based on color. This property helps us identify and differentiate te infected cell images.
 
-`Python code to convert the images to HSV using Open CV`
-
-``` py
-  import cv2
-
-  gfx=[]   # to hold the HSV image array
-  
-  for i in np.arange(0, 100, 1):
-  
-   a = cv2.cvtColor(train_images[i], cv2.COLOR_BGR2HSV)
-   
-   gfx.append(a)
-   
-  gfx = np.array(gfx)
-
-  viewimage = np.random.randint(1, 100, 5)
-  
-  fig, ax = plt.subplots(1, 5, figsize = (18, 18))
-  
-  for t, i in zip(range(5), viewimage):
-  
-   Title = train_labels[i]
-   
-   ax[t].set_title(Title) 
-   
-   ax[t].imshow(gfx[i])
-   
-   ax[t].set_axis_off()
-   
-   fig.tight_layout()
-
-``` 
+Plotted below image after converting from RBG to HSV, it's quite helpful in our problem to effeciently identify the parasite in HSV format.
+![image](https://github.com/hari255/Neural-Networks/assets/59302293/f5ef2d2c-aa38-44c1-b787-5f5ad3a4c2fb)
 
 
 **Utilizing Gaussian Blurring**
@@ -158,8 +128,9 @@ final_model.add(Dense(256, activation = "relu"))
 final_model.add(Dense(2, activation = "softmax")) # 2 represents output layer neurons
 
 final_model.summary()
-     
 
+```
+     
 ---
 
 To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
