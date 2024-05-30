@@ -49,32 +49,18 @@ In the HSV color space, it's wasy to seperate colors based on their hue. This is
   import cv2
 
   gfx=[]   # to hold the HSV image array
-
   for i in np.arange(0, 100, 1):
-
-    a = cv2.cvtColor(train_images[i], cv2.COLOR_BGR2HSV)
-
-    gfx.append(a)
-
+   a = cv2.cvtColor(train_images[i], cv2.COLOR_BGR2HSV)
+   gfx.append(a)
   gfx = np.array(gfx)
 
-
-
-
   viewimage = np.random.randint(1, 100, 5)
-
   fig, ax = plt.subplots(1, 5, figsize = (18, 18))
-
   for t, i in zip(range(5), viewimage):
-
-    Title = train_labels[i]
-
+   Title = train_labels[i]
     ax[t].set_title(Title)
-
     ax[t].imshow(gfx[i])
-
     ax[t].set_axis_off()
-
     fig.tight_layout()
 
 
