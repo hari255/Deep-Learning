@@ -107,7 +107,13 @@ Gaussina Blurring or Smoothing is a technique that helps in removing noise from 
 
 *After Gaussian smoothing, the images looks like below.
 
+![image](https://github.com/hari255/Neural-Networks/assets/59302293/f20b57b9-ed30-4b57-89d7-f6d7ce55cf38)
 
+
+
+
+
+`Python code for the model Architecure`
 ``` py
 
 model3 = Sequential()
