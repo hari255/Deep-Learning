@@ -46,6 +46,7 @@ In the HSV color space, it's wasy to seperate colors based on their hue. This is
 
 `Python code to convert the images to HSV using Open CV`
 
+``` py
   import cv2
 
   gfx=[]   # to hold the HSV image array
@@ -74,6 +75,7 @@ In the HSV color space, it's wasy to seperate colors based on their hue. This is
    
    fig.tight_layout()
 
+``` 
 
 
 
