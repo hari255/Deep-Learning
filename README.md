@@ -19,6 +19,16 @@ Data set size: 25000 samples of images which includes parasites and non-parasite
 
 
 
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
 VGG16 model; https://keras.io/api/applications/vgg/ 
 
