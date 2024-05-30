@@ -174,15 +174,15 @@ Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/
 Hey there! 🚀 Welcome to the Amazon product Recommender project! Imagine having a buddy who knows exactly what you'd like to buy online - that's what we're creating here!
 
 **The Story:**
-You know how sometimes there's just too much stuff online, and it's hard to decide what to pick? Well, our Amazon Magic Recommender is like a superhero that helps you find cool stuff you'll love! It's like having a friend who knows your favorite things.
+You know how sometimes there's just too much stuff online, and it's hard to decide what to pick? Well, this recommendation model is like our assistant that helps find cool stuff we'll love! It's like having a friend who knows your favorite things.
 
 **How it Works:**
-Big companies like Amazon use special tricks to help you find the best things to buy. They use super-smart computer programs (we call them algorithms) that look at what you liked before and suggest similar awesome stuff. It's like magic for shopping!
+Big companies like Amazon use special tricks to help you find the best things to buy. They use algorithms that look at what you liked before and suggest similar stuff or recommend related products to your purchase. 
+Example: suggesting Mouse or a Keyboard, when we purchase a Loptop.
 
-**Our Mission:**
-We're on a mission to build our own magic recommender! We're using a special set of data from Amazon, where people gave ratings to different gadgets. We're turning these ratings into a secret code so our magic recommender can learn what people like and recommend cool things to them.
+**Mission:**
+To build a recommender! We're using a special set of data from Amazon, where people gave ratings to different gadgets. We're turning these ratings into a code so our recommender can learn what people like and recommend cool things to them.
 
-So, get ready for a magical journey where we make online shopping super fun and easy! 🌟✨ Get ready to discover some awesome stuff made just for you! 🚀🛍️
  
 # 3. Leveraging Auto ML using H2O
 
