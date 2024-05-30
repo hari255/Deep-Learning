@@ -13,9 +13,43 @@ Data folder contains metadata, datasets imported in Notebooks fromt the repositr
 I've built a robust malaria detection model using Convolutional Neural Networks (CNN). Leveraging Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model to accurately identify parasites(Infection) in blood smear images. This model includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training with advanced layers like Conv2D, MaxPooling2D, and Dense. Explore the intricacies of my approach, from data augmentation to early stopping, as I aim for precise diagnosis through cutting-edge image classification.
 https://github.com/hari255/DeepLearning/blob/main/_Malaria_Detection.ipynb
 
-Data set size: 25000 samples of images which includes parasites and non-parasite cells. Below image is plotted using Python on the dataset.
+## Data Exploration
+
+**Data set size:** 25000 samples of images which includes parasites and non-parasite cells. Below image is plotted using Python on the dataset.
 
 <img width="460" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/247ea202-56a1-45a4-a959-bec0e40e9bee">
+
+Infected cells have some form of disturbances within the cell with a dark color formation.
+
+UnInfected cells are with the uniform color throughout the image.
+
+To accurately identify parasites in cell images and train our model to distinguish them, we must focus on the key aspects that differentiate these categories. This involves analyzing and understanding the unique characteristics and features that set each parasite apart. By doing so, we can ensure that our model is well-equipped to recognize and classify the various types of parasites accurately.
+
+
+**Average Uninfected Image**
+<img width="389" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/992a7520-26a7-419e-84b3-ce3601fc4f64">
+
+**Average Infected Image**
+<img width="392" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/e950ebaf-1cfe-4b4a-8e4f-14bf80222e60">
+
+**The mean image for both parasitized and uninfected are pretty much same because, the diffence between these two images are very small (infection is the only difference). The average image is obviously the larger part of it and how it seems most likely is the idea.**
+
+## Data Transformation
+
+**Converting RGB to HSV using OpenCV**
+
+The purpose of converting RGB images to HSV (Hue, Saturation, Value) using OpenCV is to facilitate more effective image processing and analysis. The HSV color space separates image intensity (brightness) from color information, which can be particularly useful for various image processing tasks. 
+
+**Leveraging Color based Segmentation** 
+In the HSV color space, it's wasy to seperate colors based on their hue. This is useful for segmenting objects in an image based on color. This property helps us identify and differentiate te infected cell images.
+
+
+
+
+
+
+
+
 
 
 
