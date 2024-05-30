@@ -8,10 +8,20 @@ Data folder contains metadata, datasets imported in Notebooks fromt the repositr
 
 
 
-# 1.  Computer Vision - Malaria detection using Convolutional Neural Networks
+# 1. Malaria detection using Convolutional Neural Networks
 
-I've built a robust malaria detection model using Convolutional Neural Networks (CNN). Leveraging Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model to accurately identify parasites(Infection) in blood smear images. This model includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training with advanced layers like Conv2D, MaxPooling2D, and Dense. Explore the intricacies of my approach, from data augmentation to early stopping, as I aim for precise diagnosis through cutting-edge image classification.
+This robust malaria detection model is built using Convolutional Neural Networks (CNN). Leveraging powerful Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model capable of accurately identifying parasites (infections) in blood smear images. This comprehensive approach includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training utilizing advanced CNN layers like Conv2D, MaxPooling2D, and Dense layers. 
+
+Explore the intricacies of my approach, from data augmentation to early stopping, as I aim for precise diagnosis through cutting-edge image classification.
 https://github.com/hari255/DeepLearning/blob/main/_Malaria_Detection.ipynb
+
+## Convlutional Neural Networks.
+
+A CNN is a type of neural network that's really good at looking at pictures and figuring out what's in them. This specific model is set up to look at images that are 64x64 pixels with 3 color channels (red, green, blue) and decide between categories.
+
+![image](https://github.com/hari255/Neural-Networks/assets/59302293/6be05b5d-6bf4-4a45-b2dd-fb604d538060)
+
+
 
 ## Data Exploration
 
