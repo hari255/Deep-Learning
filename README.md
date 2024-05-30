@@ -21,6 +21,9 @@ A CNN is a type of neural network that's really good at looking at pictures and 
 
 ![image](https://github.com/hari255/Neural-Networks/assets/59302293/6be05b5d-6bf4-4a45-b2dd-fb604d538060)
 
+**Model Architecture**
+
+![image](https://github.com/hari255/Neural-Networks/assets/59302293/3d25d865-a0f0-457b-88c0-904a15f1ccda)
 
 
 ## Data Exploration
@@ -110,7 +113,9 @@ Gaussina Blurring or Smoothing is a technique that helps in removing noise from 
 ![image](https://github.com/hari255/Neural-Networks/assets/59302293/f20b57b9-ed30-4b57-89d7-f6d7ce55cf38)
 
 
+## Model 
 
+**Considering the problem of detecting parasite, our model needs to have High `True positive` rate and low `false negative` rate.  If we manage to build such a model, then it would be appropriate for malaira classification. It is because we can't take any chances on the `False Negatives`, it means predecting uninfected when actually infected, which can lead to serious issues.**
 
 
 `Python code for the model Architecure`
@@ -155,18 +160,16 @@ model3.summary()
 ```
 
 
-
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
+---
 
 To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
 VGG16 model; https://keras.io/api/applications/vgg/ 
 
 Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/applications/vgg/
+
+
+---------------------------------------------------------
+---------------------------------------------------------
 
 # 2. Recommedation systems based on Amazon user's purchase history
 
@@ -184,6 +187,10 @@ Example: suggesting Mouse or a Keyboard, when we purchase a Loptop.
 To build a recommender! We're using a special set of data from Amazon, where people gave ratings to different gadgets. We're turning these ratings into a code so our recommender can learn what people like and recommend cool things to them.
 
  
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+
 # 3. Leveraging Auto ML using H2O
 
 **What is Auto ML?**
