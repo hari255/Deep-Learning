@@ -26,11 +26,12 @@ UnInfected cells are with the uniform color throughout the image.
 To accurately identify parasites in cell images and train our model to distinguish them, we must focus on the key aspects that differentiate these categories. This involves analyzing and understanding the unique characteristics and features that set each parasite apart. By doing so, we can ensure that our model is well-equipped to recognize and classify the various types of parasites accurately.
 
 
-**Average Uninfected Image**
++ **Average Uninfected Image**
 <img width="389" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/992a7520-26a7-419e-84b3-ce3601fc4f64">
 
-**Average Infected Image**
++ **Average Infected Image**
 <img width="392" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/e950ebaf-1cfe-4b4a-8e4f-14bf80222e60">
+
 
 **The mean image for both parasitized and uninfected are pretty much same because, the diffence between these two images are very small (infection is the only difference). The average image is obviously the larger part of it and how it seems most likely is the idea.**
 
@@ -43,6 +44,38 @@ The purpose of converting RGB images to HSV (Hue, Saturation, Value) using OpenC
 **Leveraging Color based Segmentation** 
 In the HSV color space, it's wasy to seperate colors based on their hue. This is useful for segmenting objects in an image based on color. This property helps us identify and differentiate te infected cell images.
 
+`Python code to convert the images to HSV using Open CV`
+
+  import cv2
+
+  gfx=[]   # to hold the HSV image array
+
+  for i in np.arange(0, 100, 1):
+
+    a = cv2.cvtColor(train_images[i], cv2.COLOR_BGR2HSV)
+
+    gfx.append(a)
+
+  gfx = np.array(gfx)
+
+
+
+
+  viewimage = np.random.randint(1, 100, 5)
+
+  fig, ax = plt.subplots(1, 5, figsize = (18, 18))
+
+  for t, i in zip(range(5), viewimage):
+
+    Title = train_labels[i]
+
+    ax[t].set_title(Title)
+
+    ax[t].imshow(gfx[i])
+
+    ax[t].set_axis_off()
+
+    fig.tight_layout()
 
 
 
