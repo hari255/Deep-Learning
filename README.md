@@ -21,10 +21,6 @@ A CNN is a type of neural network that's really good at looking at pictures and 
 
 ![image](https://github.com/hari255/Neural-Networks/assets/59302293/6be05b5d-6bf4-4a45-b2dd-fb604d538060)
 
-**Model Architecture**
-
-![image](https://github.com/hari255/Neural-Networks/assets/59302293/3d25d865-a0f0-457b-88c0-904a15f1ccda)
-
 
 ## Data Exploration
 
@@ -120,45 +116,49 @@ Gaussina Blurring or Smoothing is a technique that helps in removing noise from 
 
 `Python code for the model Architecure`
 ``` py
+from tensorflow.keras.layers import  BatchNormalization
+from tensorflow.keras import layers
+from keras import optimizers
+from tensorflow.keras.optimizers import Adam
 
-model3 = Sequential()
 
-# Build the model here
-model3.add(Conv2D(filters = 32, kernel_size = 2, padding = "same", activation = "relu", input_shape = (64, 64, 3)))
 
-model3.add(MaxPooling2D(pool_size = 2))
+final_model = Sequential()
 
-model3.add(Dropout(0.2))
+# Build the model here and add new layers
 
-model3.add(Conv2D(filters = 32, kernel_size = 2, padding = "same", activation = "relu"))
 
-model3.add(MaxPooling2D(pool_size = 2))
+final_model.add(Conv2D(filters = 64, kernel_size = (2,2), strides = (1,1), padding = "same", activation = "relu", input_shape = (64, 64, 3)))
+final_model.add(MaxPooling2D(pool_size = 2))
 
-model3.add(Dropout(0.2))
 
-model3.add(Conv2D(filters = 32, kernel_size = 2, padding = "same", activation = "relu"))
+final_model.add(Conv2D(filters = 64, kernel_size =(2,2), strides = (1,1), padding = "same", activation = "relu"))
 
-model3.add(MaxPooling2D(pool_size = 2))
+final_model.add(MaxPooling2D(pool_size = 2))
 
-model3.add(Dropout(0.2))
 
-model3.add(Flatten())
+final_model.add(Conv2D(filters = 64, kernel_size = (2,2), strides =(1,1), padding = "valid", activation = "relu"))
 
-model3.add(Dense(512, activation = "relu"))
+final_model.add(MaxPooling2D(pool_size = 2))
 
-model3.add(Dropout(0.4))
+final_model.add(Dropout(0.2))
 
-model3.add(Dense(2, activation = "softmax")) # 2 represents output layer neurons
+final_model.add(Conv2D(filters = 32, kernel_size = (2,2), padding = "same", activation = "relu"))
 
-# Use this as the optimizer
-adam = optimizers.Adam(learning_rate = 0.001)
+final_model.add(MaxPooling2D(pool_size = 2))
 
-model3.compile(loss = 'binary_crossentropy' , optimizer = adam, metrics = ['accuracy'])
+final_model.add(Dropout(0.2))
 
-model3.summary()
+final_model.add(Flatten())
 
-```
+final_model.add(Dense(256, activation = "relu"))
 
+final_model.add(Dense(256, activation = "relu"))
+
+final_model.add(Dense(2, activation = "softmax")) # 2 represents output layer neurons
+
+final_model.summary()
+     
 
 ---
 
