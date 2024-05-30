@@ -7,7 +7,6 @@
 Data folder contains metadata, datasets imported in Notebooks fromt the repositry, sample images and information realted to datsets.
 
 
-
 # 1. Malaria detection using Convolutional Neural Networks
 
 This robust malaria detection model is built using Convolutional Neural Networks (CNN). Leveraging powerful Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model capable of accurately identifying parasites (infections) in blood smear images. This comprehensive approach includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training utilizing advanced CNN layers like Conv2D, MaxPooling2D, and Dense layers. 
@@ -55,7 +54,7 @@ In the data transformation stage, I've tried to use multiple techniques used in 
 | Data Augmentation   | To slightly alter the image and generate new one |
 
 
-**Converting RGB to HSV using OpenCV**
+## Converting images from RGB to HSV using OpenCV
 
 The purpose of converting RGB images to HSV (Hue, Saturation, Value) using OpenCV is to facilitate more effective image processing and analysis. The HSV color space separates image intensity (brightness) from color information, which can be particularly useful for various image processing tasks. 
 
@@ -65,16 +64,16 @@ Plotted below image after converting from RBG to HSV, it's quite helpful in our 
 ![image](https://github.com/hari255/Neural-Networks/assets/59302293/f5ef2d2c-aa38-44c1-b787-5f5ad3a4c2fb)
 
 
-**Utilizing Gaussian Blurring**
+## Gaussian Blurring
 
-Gaussina Blurring or Smoothing is a technique that helps in removing noise from an image. It uses Gaussian kernel to weigh the neighboring pixels based on a Gaussian distribution.
+**Gaussina Blurring or Smoothing is a technique that helps in removing noise from an image. It uses Gaussian kernel to weigh the neighboring pixels based on a Gaussian distribution.**
 
 <img width="252" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/1165c5af-51d5-4173-950e-cc82a864bbb5">
 
 + (x,y) are the coordinates of the pixel.
 + σ is the standard deviation of the Gaussian distribution, which controls the amount of blurring.
 
-**After Gaussian smoothing, the images looks like below.**
+After Gaussian smoothing, the images looks like below
 
 ![image](https://github.com/hari255/Neural-Networks/assets/59302293/f20b57b9-ed30-4b57-89d7-f6d7ce55cf38)
 
