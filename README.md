@@ -10,8 +10,14 @@ Data folder contains metadata, datasets imported in Notebooks fromt the repositr
 
 # 1.  Computer Vision - Malaria detection using Convolutional Neural Networks
 
-This is a robust malaria detection system using Convolutional Neural Networks (CNN). Leveraging Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model to accurately identify parasites in blood smear images. This model includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training with advanced layers like Conv2D, MaxPooling2D, and Dense. Explore the intricacies of my approach, from data augmentation to early stopping, as we aim for precise diagnosis through cutting-edge image classification.
+I've built a robust malaria detection model using Convolutional Neural Networks (CNN). Leveraging Python libraries such as TensorFlow, PIL, and scikit-learn, I've developed a model to accurately identify parasites(Infection) in blood smear images. This model includes preprocessing with NumPy and pandas, data visualization with Matplotlib and Seaborn, and efficient model training with advanced layers like Conv2D, MaxPooling2D, and Dense. Explore the intricacies of my approach, from data augmentation to early stopping, as I aim for precise diagnosis through cutting-edge image classification.
 https://github.com/hari255/DeepLearning/blob/main/_Malaria_Detection.ipynb
+
+Data set size: 25000 samples of images which includes parasites and non-parasite cells. Below image is plotted using Python on the dataset.
+
+<img width="460" alt="image" src="https://github.com/hari255/Neural-Networks/assets/59302293/247ea202-56a1-45a4-a959-bec0e40e9bee">
+
+
 
 To benchmark my innovative approach, I've conducted a comprehensive performance analysis against the renowned VGG16 image-detection model. The findings not only highlight the superiority of my model but also shed light on key metrics that set it apart.
 VGG16 model; https://keras.io/api/applications/vgg/ 
