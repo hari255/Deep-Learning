@@ -142,19 +142,47 @@ Team, Keras. (2016). Keras Documentation: VGG16 and VGG19. https://keras.io/api/
 ---------------------------------------------------------
 
 # 2. Recommedation systems based on Amazon user's purchase history
+Imagine having a buddy who knows exactly what you'd like to buy online - that's what we're creating here!
+
+Welcome to the project on Recommendation Systems. I've used Amazon product reviews dataset for this project. The dataset contains ratings of different electronic products. It does not include information about the products or reviews to avoid bias while building the model.
+
+**Context:**
+
+Today, information is growing exponentially with volume, velocity and variety throughout the globe. This has lead to information overload, and too many choices for the consumer of any business. It represents a real dilemma for these consumers and they often turn to denial. Recommender Systems are one of the best tools that help recommending products to consumers while they are browsing online. Providing personalized recommendations which is most relevant for the user is what's most likely to keep them engaged and help business.
+
+E-commerce websites like Amazon, Walmart, Target and Etsy use different recommendation models to provide personalized suggestions to different users. These companies spend millions of dollars to come up with algorithmic techniques that can provide personalized recommendations to their users.
+
+Amazon, for example, is well-known for its accurate selection of recommendations in its online site. Amazon's recommendation system is capable of intelligently analyzing and predicting customers' shopping preferences in order to offer them a list of recommended products. Amazon's recommendation algorithm is therefore a key element in using AI to improve the personalization of its website. For example, one of the baseline recommendation models that Amazon uses is item-to-item collaborative filtering, which scales to massive data sets and produces high-quality recommendations in real-time.
+
+**Objective:**
+`
+To build a recommendation system to recommend products to customers based on their previous ratings for other products. We have a collection of labeled data of Amazon reviews of products. The goal is to extract meaningful insights from the data and build a recommendation system that helps in recommending products to online consumers.
+`
+**Dataset:**
+
+### The Amazon dataset contains the following attributes:
+ | Column | Description |
+ |---------|-------------|
+ | userId:| Every user identified with a unique id | 
+ | productId: |Every product identified with a unique id |
+ | Rating: |The rating of the corresponding product by the corresponding user |
+ | timestamp: |Time of the rating. We will not use this column to solve the current problem |
+
+As usaual, the important pre-requisite before building the model is perfomring Exploratory data analysis. I've dereived below key insights from the dataset after performing EDA by utilizing some of the python libraries like `Pandas`, `Numpy`,  and `Matplotlib`. 
 
 
-Hey there! 🚀 Welcome to the Amazon product Recommender project! Imagine having a buddy who knows exactly what you'd like to buy online - that's what we're creating here!
+<img width="583" alt="Screenshot 2024-07-08 at 3 21 05 PM" src="https://github.com/hari255/Neural-Networks/assets/59302293/d6b0971c-78c6-4f37-8ef7-f4605347e384">
 
-**The Story:**
-You know how sometimes there's just too much stuff online, and it's hard to decide what to pick? Well, this recommendation model is like our assistant that helps find cool stuff we'll love! It's like having a friend who knows your favorite things.
++ X-Axis represents rating on a scale of 1-5
++ Y-Axis represents number of ratings 
 
-**How it Works:**
-Big companies like Amazon use special tricks to help you find the best things to buy. They use algorithms that look at what you liked before and suggest similar stuff or recommend related products to your purchase. 
-Example: suggesting Mouse or a Keyboard, when we purchase a Loptop.
+There are many other isights derived from EDA which not necessiarly required plots, they are;
 
-**Mission:**
-To build a recommender! We're using a special set of data from Amazon, where people gave ratings to different gadgets. We're turning these ratings into a code so our recommender can learn what people like and recommend cool things to them.
++ Top 10 users with most number of ratings.
++ Number of unique users.
++ Number of unique items that are reviewd.
+
+
 
  
 ------------------------------------------------------------------
